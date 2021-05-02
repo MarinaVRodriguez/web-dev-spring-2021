@@ -1,0 +1,23 @@
+#window {
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+    border: 1px black;
+   }
+
+/**/ #imageSlider img {
+    width: 100%;
+} 
+
+#imageSlider {
+    display: flex;
+    transform: translateX(000px);   
+}
+.nextButton{
+    margin: 15px 0 0 0;
+    
+}
+.previousButton{
+    margin: 15px 0 0 0;
+   
+}

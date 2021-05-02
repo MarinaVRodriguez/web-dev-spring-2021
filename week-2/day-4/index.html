@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marina's Carousel</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Marina's JavaScript Carousel</h1>
+    <div id="window">
+        <div id="imageSlider">
+            <img src="./images/MVR_1.jpg" alt="Puerto Rico SunSet">
+            <img src="./images/MVR_2.jpg" alt="LakeView SunRise">
+            <img src="./images/MVR_3.jpg" alt="USMC Hanger">
+            <img src="./images/MVR_4.jpg" alt="LakeView Purple SunRise">
+        </div>
+    </div>
+    <button class="previousButton"onclick="previousImage()">Previous Image</button>
+    <button class="nextButton" onclick="nextImage()">Next Image</button>
+    <script>
+        let position = 0;
+
+        const previousImage = function() {
+             // increment position by 200
+            position = position - 200;
+
+            // grab image slider from the DOM & adjust the styles for transform translate -200
+            document.getElementById('imageSlider').style.transform = `translate(${position}px, 0)`;
+            // adjust the styles for transform translate -200
+        }
+        const nextImage = function() {
+            position = position - 200;
+            // decrement position by 200
+
+        // grab image slider from the DOM & adjust the styles for transform translate -200
+            document.getElementById('imageSlider').style.transform = `translate(${position}px, 600)`;
+          
+        }
+
+    </script>
+
+</body>
+</html>

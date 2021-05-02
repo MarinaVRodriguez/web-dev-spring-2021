@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myHeader">Hello, JavaScript</h1>
+    
+    <h4>Event Handlers</h4>
+    <p>
+        These are events that the user uses interact
+        with the webpage.
+        <br/>
+        <strong>Click</strong>
+    </p>
+    <button onclick="myFunction()">Click Me Red</button>
+
+    <button onclick="myblueFunction()">Click Me Blue</button>
+    <script>
+        const myFunction = function () {
+           document.getElementById('myHeader').style.backgroundColor = 'red'; 
+        }
+        const myblueFunction = function () {
+           document.getElementById('myHeader').style.backgroundColor = 'blue'; 
+        }
+    </script>
+</body>
+</html>
