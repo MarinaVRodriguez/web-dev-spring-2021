@@ -15,6 +15,7 @@ h2{
     height: 750px;
     border: 1px black;
     margin: 50px 0 0 150px;
+    overflow: hidden;
    }
 
 /**/ #imageSlider img {
